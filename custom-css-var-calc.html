@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom css,Var,Calc Explore</title>
+    <style>
+        :root{
+            --primary-color  :green;
+            --secondary-color :blue;
+            --font-size: 20px;
+            --background-color: tomato;
+        }
+        h1{
+           color: var(--primary-color);
+        }
+        .box{
+            border: 2px solid var(--primary-color);
+            background-color:var(--secondary-color) ;
+        }
+        p{
+            font-size:var(--font-size) ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom CSS Explore</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum doloremque exercitationem quae architecto nostrum maiores officia assumenda dolorem sed est quod, ad cumque vitae asperiores ipsum natus facere consequuntur?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid row,grid column,grid span</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+            gap: 5px;
+        }
+
+        .item {
+
+            border: 1px solid red;
+
+
+        }
+
+        #item-1 {
+            grid-row: span 5;
+        }
+
+        #item-11,
+        #item-12 {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item-1">Item - 1</div>
+        <div class="item" id="item-2">Item - 2</div>
+        <div class="item" id="item-3">Item - 3</div>
+        <div class="item" id="item-4">Item - 4</div>
+        <div class="item" id="item-5">Item - 5</div>
+        <div class="item" id="item-6">Item - 6</div>
+        <div class="item" id="item-7">Item - 7</div>
+        <div class="item" id="item-8">Item - 8</div>
+        <div class="item" id="item-9">Item - 9</div>
+        <div class="item" id="item-10">Item - 10</div>
+        <div class="item" id="item-11">Item - 11</div>
+        <div class="item" id="item-12">Item - 12</div>
+    </div>
+</body>
+
+</html>
